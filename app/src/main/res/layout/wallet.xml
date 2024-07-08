@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cVOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iVBag"
+            android:layout_width="109dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="88dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/income" />
+
+        <ImageView
+            android:id="@+id/iVStack"
+            android:layout_width="153dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="296dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/expense" />
+
+        <ImageView
+            android:id="@+id/iVCoins"
+            android:layout_width="133dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iVBag"
+            app:srcCompat="@drawable/balance" />
+
+        <TextView
+            android:id="@+id/tvMoneyIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="MONEY IN"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/iVBag"
+            app:layout_constraintTop_toTopOf="@+id/iVBag" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="BALANCE"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/iVCoins"
+            app:layout_constraintTop_toTopOf="@+id/iVCoins" />
+
+        <TextView
+            android:id="@+id/tv18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginBottom="44dp"
+            android:text="KES 18,700"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iVCoins"
+            app:layout_constraintStart_toStartOf="@+id/iVCoins" />
+
+        <TextView
+            android:id="@+id/tvMoneyOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="MONEY OUT"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/iVStack"
+            app:layout_constraintTop_toTopOf="@+id/iVStack" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="105dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="80dp"
+            app:layout_constraintStart_toEndOf="@+id/tv18"
+            app:layout_constraintTop_toBottomOf="@+id/iVStack"
+            app:srcCompat="@drawable/transactions__2_" />
+
+        <TextView
+            android:id="@+id/tvTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="48dp"
+            android:text="TRANSACTIONS"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            tools:layout_editor_absoluteY="265dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
